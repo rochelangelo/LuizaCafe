@@ -13,3 +13,8 @@ RewriteRule . /CafeLuiza/index.php [L]
 </IfModule>
 
 # END WordPress
+
+
+RewriteEngine on
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]]

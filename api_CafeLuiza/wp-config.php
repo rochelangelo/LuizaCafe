@@ -59,6 +59,10 @@ define( 'SECURE_AUTH_SALT', 'Zc[I:hl:9_g;7a}-OxJ{An{I5N{*e8GT.|Y`6hWLU(.qTM@-wN8
 define( 'LOGGED_IN_SALT',   's(%+P(;4D$6~qj52j75g0mV;^4%pgIZ4ry_<@{6s=!i0@yb]3cTgtK,RD(e7wo$k' );
 define( 'NONCE_SALT',       ' 0cYCEoZDs1G6;)dn_Qe>>m4GKf g,7AS5r*^E!Z@7|7{`:I}5K4exhoZk%2wz;X' );
 
+
+define('JWT_AUTH_SECRET_KEY', 'v_h|lh]VwTf(ANLwcbs}f%e(|p=8A%KI7{RAkwg.a;MP-Ky.d: BnRiOTAOOJ0^|');
+define('JWT_AUTH_CORS_ENABLE', true);
+
 /**#@-*/
 
 /**
@@ -68,6 +72,8 @@ define( 'NONCE_SALT',       ' 0cYCEoZDs1G6;)dn_Qe>>m4GKf g,7AS5r*^E!Z@7|7{`:I}5K
  * um prefixo único para cada um. Somente números, letras e sublinhados!
  */
 $table_prefix = 'wp_';
+
+
 
 /**
  * Para desenvolvedores: Modo de debug do WordPress.
